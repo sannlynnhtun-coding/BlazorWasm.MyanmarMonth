@@ -13,7 +13,8 @@ public partial class Index
             //await JsRuntime.InvokeVoidAsync("loadJs", targetUrl);
 
             await Task.Delay(500);
-            await JsRuntime.InvokeVoidAsync("loadForm");
+            //await JsRuntime.InvokeVoidAsync("loadForm");
+            await JsRuntime.InvokeVoidAsync("loadJs", "themes/js/32tfwgs.js");
         }
     }
 }
