@@ -55,8 +55,16 @@
 
             document.body.appendChild(tag);
         }
-    </script>
+        window.setLoader = function (isRun) {
+            if (isRun) {
+                $("#page-loader").removeClass("hide-this");
+            }
+            else {
+                $("#page-loader").addClass("hide-this");
+            }
+        }
 
+    </script>
 </body>
 
 </html>

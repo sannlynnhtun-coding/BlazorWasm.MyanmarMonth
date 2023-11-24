@@ -2,201 +2,201 @@
 @inject IJSRuntime JsRuntime
 
 @* <div id="main"> *@
-    <section id="hero" class="hero hero-3">
-        <div class="front-content page-enter-animated">
-            <div class="container-mid selection selection-1">
-                <div class="inner">
-                    <div class="container choose-hero-container">
-                        <h1>1. CHOOSE A HERO</h1>
-                        <div class="dropd">
-                            <div class="dropdown closed">
-                                <div class="title">LOGO</div>
-                                <div class="dropdown-menu">
-                                    <ul>
-                                        <li id="hero-logo" data-bindedHtml="index-2.html">LOGO</li>
-                                        <li id="hero-text" data-bindedHtml="index-1.html">TEXT</li>
-                                        <li id="hero-slider-text" data-bindedHtml="index-3.html">TEXT SLIDER</li>
-                                        <li id="hero-slider-image" data-bindedHtml="index-4.html">IMAGE SLIDER</li>
-                                        <li id="hero-slider-revolution" data-bindedHtml="index-5.html">
-                                            SLIDER
-                                            REVOLUTION
-                                        </li>
-                                    </ul>
-                                </div>
+<section id="hero" class="hero hero-3">
+    <div class="front-content page-enter-animated">
+        <div class="container-mid selection selection-1">
+            <div class="inner">
+                <div class="container choose-hero-container">
+                    <h1>မြန်မာလများ</h1>
+                    @* <div class="dropd">
+                        <div class="dropdown">
+                            <div class="title">LOGO</div>
+                            @* <div class="dropdown-menu">
+                                <ul>
+                                    <li id="hero-logo" data-bindedHtml="index-2.html">LOGO</li>
+                                    <li id="hero-text" data-bindedHtml="index-1.html">TEXT</li>
+                                    <li id="hero-slider-text" data-bindedHtml="index-3.html">TEXT SLIDER</li>
+                                    <li id="hero-slider-image" data-bindedHtml="index-4.html">IMAGE SLIDER</li>
+                                    <li id="hero-slider-revolution" data-bindedHtml="index-5.html">
+                                        SLIDER
+                                        REVOLUTION
+                                    </li>
+                                </ul>
+                            </div> 
+                        </div>
+                    </div> *@
+                    <div class="heros-container">
+                        @* <div class="tab-pane allow-selecting" data-orderedTo="hero-text">
+                            <img src="themes/images/months/logo.jpg" alt="Myanmar Months"
+                                 class="img-responsive hero-showcase">
+                            <div class="inner-container">
+                                <div class="container-mid"> <span class="ti-arrow-right"></span> </div>
+                            </div>
+                        </div> *@
+                        <div class="tab-pane allow-selecting active" data-orderedTo="hero-logo">
+                            <img src="themes/images/months/logo.jpg" alt="Myanmar Months"
+                                 class="img-responsive hero-showcase">
+                            <div class="inner-container">
+                                <div class="container-mid"> <span class="ti-arrow-right"></span> </div>
                             </div>
                         </div>
-                        <div class="heros-container">
-                            <div class="tab-pane allow-selecting" data-orderedTo="hero-text">
-                                <img src="themes/images/hero-1.jpg" alt="hero-1"
-                                     class="img-responsive hero-showcase">
-                                <div class="inner-container">
-                                    <div class="container-mid"> <span class="ti-arrow-right"></span> </div>
-                                </div>
+                        @* <div class="tab-pane allow-selecting" data-orderedTo="hero-slider-text">
+                            <img src="themes/images/months/logo.jpg" alt="Myanmar Months"
+                                 class="img-responsive hero-showcase">
+                            <div class="inner-container">
+                                <div class="container-mid"> <span class="ti-arrow-right"></span> </div>
                             </div>
-                            <div class="tab-pane allow-selecting active" data-orderedTo="hero-logo">
-                                <img src="themes/images/hero-2.jpg" alt="hero-2"
-                                     class="img-responsive hero-showcase">
-                                <div class="inner-container">
-                                    <div class="container-mid"> <span class="ti-arrow-right"></span> </div>
-                                </div>
+                        </div>
+                        <div class="tab-pane allow-selecting" data-orderedTo="hero-slider-image">
+                            <img src="themes/images/months/logo.jpg" alt="Myanmar Months"
+                                 class="img-responsive hero-showcase">
+                            <div class="inner-container">
+                                <div class="container-mid"> <span class="ti-arrow-right"></span> </div>
                             </div>
-                            <div class="tab-pane allow-selecting" data-orderedTo="hero-slider-text">
-                                <img src="themes/images/hero-3.jpg" alt="hero-3"
-                                     class="img-responsive hero-showcase">
+                        </div>
+                        <div class="tab-pane" data-orderedTo="hero-slider-revolution">
+                            <a href="demo/index-5.html" target="_blank">
+                                <img src="themes/images/months/logo.jpg"
+                                     alt="Myanmar Months" class="img-responsive hero-showcase">
                                 <div class="inner-container">
-                                    <div class="container-mid"> <span class="ti-arrow-right"></span> </div>
+                                    <div class="container-mid"> <span class="ti-new-window"></span> </div>
                                 </div>
+                            </a>
+                        </div> *@
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-mid selection selection-2">
+            <div class="inner">
+                <div class="container choose-background-container">
+                    <div class="topline">
+                        <span class="ti-arrow-left button-back"></span>
+                        <h1>မြန်မာလများအသေးစိတ်</h1>
+                    </div>
+                    <div class="grid">
+                        <div class="owl-carousel owl-theme">
+                            <div class="item text-center">
+                                <a href="demo/index-2.html?bg=kenburns"
+                                   target="_blank" data-bg="kenburns">
+                                    <div class="container-mid">
+                                        <h2>KENBURNS</h2> <span class="ti-eye"></span>
+                                    </div><img src="themes/images/bg-kenburns.jpg" alt="background"
+                                               class="img-responsive">
+                                </a>
                             </div>
-                            <div class="tab-pane allow-selecting" data-orderedTo="hero-slider-image">
-                                <img src="themes/images/hero-4.jpg" alt="hero-4"
-                                     class="img-responsive hero-showcase">
-                                <div class="inner-container">
-                                    <div class="container-mid"> <span class="ti-arrow-right"></span> </div>
-                                </div>
+                            <div class="item text-center">
+                                <a href="demo/index-2.html?bg=waves" target="_blank"
+                                   data-bg="waves">
+                                    <div class="container-mid">
+                                        <h2>WAVES</h2> <span class="ti-align-left"></span>
+                                    </div><img src="themes/images/bg-waves.jpg" alt="background"
+                                               class="img-responsive">
+                                </a>
                             </div>
-                            <div class="tab-pane" data-orderedTo="hero-slider-revolution">
-                                <a href="demo/index-5.html" target="_blank">
-                                    <img src="themes/images/hero-5.jpg"
-                                         alt="hero-5" class="img-responsive hero-showcase">
-                                    <div class="inner-container">
-                                        <div class="container-mid"> <span class="ti-new-window"></span> </div>
-                                    </div>
+                            <div class="item text-center">
+                                <a href="demo/index-2.html?bg=youtube"
+                                   target="_blank" data-bg="youtube">
+                                    <div class="container-mid">
+                                        <h2>YOUTUBE</h2> <span class="ti-control-play"></span>
+                                    </div><img src="themes/images/bg-youtube.jpg" alt="background"
+                                               class="img-responsive">
+                                </a>
+                            </div>
+                            <div class="item text-center">
+                                <a href="demo/index-2.html?bg=space" target="_blank"
+                                   data-bg="space">
+                                    <div class="container-mid">
+                                        <h2>SPACE</h2> <span class="ti-rocket"></span>
+                                    </div><img src="themes/images/bg-space.jpg" alt="background"
+                                               class="img-responsive">
+                                </a>
+                            </div>
+                            <div class="item text-center">
+                                <a href="demo/index-2.html?bg=slider" target="_blank"
+                                   data-bg="slider">
+                                    <div class="container-mid">
+                                        <h2>SLIDER</h2> <span class="ti-arrows-horizontal"></span>
+                                    </div><img src="themes/images/bg-slider.jpg" alt="background"
+                                               class="img-responsive">
+                                </a>
+                            </div>
+                            <div class="item text-center">
+                                <a href="demo/index-2.html?bg=glitch" target="_blank"
+                                   data-bg="glitch">
+                                    <div class="container-mid">
+                                        <h2>GLITCH</h2> <span class="ti-layers-alt"></span>
+                                    </div><img src="themes/images/bg-glitch.jpg" alt="background"
+                                               class="img-responsive">
+                                </a>
+                            </div>
+                            <div class="item text-center">
+                                <a href="demo/index-2.html?bg=abstract"
+                                   target="_blank" data-bg="abstract">
+                                    <div class="container-mid">
+                                        <h2>ABSTRACT</h2> <span class="ti-align-center"></span>
+                                    </div><img src="themes/images/bg-abstract.jpg" alt="background"
+                                               class="img-responsive">
+                                </a>
+                            </div>
+                            <div class="item text-center">
+                                <a href="demo/index-2.html?bg=sphere" target="_blank"
+                                   data-bg="sphere">
+                                    <div class="container-mid">
+                                        <h2>SPHERE</h2> <span class="ti-world"></span>
+                                    </div><img src="themes/images/bg-sphere.jpg" alt="background"
+                                               class="img-responsive">
+                                </a>
+                            </div>
+                            <div class="item text-center">
+                                <a href="demo/index-2.html?bg=image" target="_blank"
+                                   data-bg="image">
+                                    <div class="container-mid">
+                                        <h2>IMAGE</h2> <span class="ti-image"></span>
+                                    </div><img src="themes/images/bg-image.jpg" alt="background"
+                                               class="img-responsive">
+                                </a>
+                            </div>
+                            <div class="item text-center">
+                                <a href="demo/index-2.html?bg=mesh" target="_blank"
+                                   data-bg="mesh">
+                                    <div class="container-mid">
+                                        <h2>MESH</h2> <span class="ti-widgetized"></span>
+                                    </div><img src="themes/images/bg-mesh.jpg" alt="background"
+                                               class="img-responsive">
+                                </a>
+                            </div>
+                            <div class="item text-center">
+                                <a href="demo/index-2.html?bg=gradient"
+                                   target="_blank" data-bg="gradient">
+                                    <div class="container-mid">
+                                        <h2>GRADIENT</h2> <span class="ti-paint-roller"></span>
+                                    </div><img src="themes/images/bg-gradient.jpg" alt="background"
+                                               class="img-responsive">
+                                </a>
+                            </div>
+                            <div class="item text-center">
+                                <a href="demo/index-2.html?bg=color" target="_blank"
+                                   data-bg="color">
+                                    <div class="container-mid">
+                                        <h2>COLOR</h2> <span class="ti-palette"></span>
+                                    </div><img src="themes/images/bg-color.jpg" alt="background"
+                                               class="img-responsive">
                                 </a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="container-mid selection selection-2">
-                <div class="inner">
-                    <div class="container choose-background-container">
-                        <div class="topline">
-                            <span class="ti-arrow-left button-back"></span>
-                            <h1>2. CHOOSE A BACKGROUND</h1>
-                        </div>
-                        <div class="grid">
-                            <div class="owl-carousel owl-theme">
-                                <div class="item text-center">
-                                    <a href="demo/index-2.html?bg=kenburns"
-                                       target="_blank" data-bg="kenburns">
-                                        <div class="container-mid">
-                                            <h2>KENBURNS</h2> <span class="ti-eye"></span>
-                                        </div><img src="themes/images/bg-kenburns.jpg" alt="background"
-                                                   class="img-responsive">
-                                    </a>
-                                </div>
-                                <div class="item text-center">
-                                    <a href="demo/index-2.html?bg=waves" target="_blank"
-                                       data-bg="waves">
-                                        <div class="container-mid">
-                                            <h2>WAVES</h2> <span class="ti-align-left"></span>
-                                        </div><img src="themes/images/bg-waves.jpg" alt="background"
-                                                   class="img-responsive">
-                                    </a>
-                                </div>
-                                <div class="item text-center">
-                                    <a href="demo/index-2.html?bg=youtube"
-                                       target="_blank" data-bg="youtube">
-                                        <div class="container-mid">
-                                            <h2>YOUTUBE</h2> <span class="ti-control-play"></span>
-                                        </div><img src="themes/images/bg-youtube.jpg" alt="background"
-                                                   class="img-responsive">
-                                    </a>
-                                </div>
-                                <div class="item text-center">
-                                    <a href="demo/index-2.html?bg=space" target="_blank"
-                                       data-bg="space">
-                                        <div class="container-mid">
-                                            <h2>SPACE</h2> <span class="ti-rocket"></span>
-                                        </div><img src="themes/images/bg-space.jpg" alt="background"
-                                                   class="img-responsive">
-                                    </a>
-                                </div>
-                                <div class="item text-center">
-                                    <a href="demo/index-2.html?bg=slider" target="_blank"
-                                       data-bg="slider">
-                                        <div class="container-mid">
-                                            <h2>SLIDER</h2> <span class="ti-arrows-horizontal"></span>
-                                        </div><img src="themes/images/bg-slider.jpg" alt="background"
-                                                   class="img-responsive">
-                                    </a>
-                                </div>
-                                <div class="item text-center">
-                                    <a href="demo/index-2.html?bg=glitch" target="_blank"
-                                       data-bg="glitch">
-                                        <div class="container-mid">
-                                            <h2>GLITCH</h2> <span class="ti-layers-alt"></span>
-                                        </div><img src="themes/images/bg-glitch.jpg" alt="background"
-                                                   class="img-responsive">
-                                    </a>
-                                </div>
-                                <div class="item text-center">
-                                    <a href="demo/index-2.html?bg=abstract"
-                                       target="_blank" data-bg="abstract">
-                                        <div class="container-mid">
-                                            <h2>ABSTRACT</h2> <span class="ti-align-center"></span>
-                                        </div><img src="themes/images/bg-abstract.jpg" alt="background"
-                                                   class="img-responsive">
-                                    </a>
-                                </div>
-                                <div class="item text-center">
-                                    <a href="demo/index-2.html?bg=sphere" target="_blank"
-                                       data-bg="sphere">
-                                        <div class="container-mid">
-                                            <h2>SPHERE</h2> <span class="ti-world"></span>
-                                        </div><img src="themes/images/bg-sphere.jpg" alt="background"
-                                                   class="img-responsive">
-                                    </a>
-                                </div>
-                                <div class="item text-center">
-                                    <a href="demo/index-2.html?bg=image" target="_blank"
-                                       data-bg="image">
-                                        <div class="container-mid">
-                                            <h2>IMAGE</h2> <span class="ti-image"></span>
-                                        </div><img src="themes/images/bg-image.jpg" alt="background"
-                                                   class="img-responsive">
-                                    </a>
-                                </div>
-                                <div class="item text-center">
-                                    <a href="demo/index-2.html?bg=mesh" target="_blank"
-                                       data-bg="mesh">
-                                        <div class="container-mid">
-                                            <h2>MESH</h2> <span class="ti-widgetized"></span>
-                                        </div><img src="themes/images/bg-mesh.jpg" alt="background"
-                                                   class="img-responsive">
-                                    </a>
-                                </div>
-                                <div class="item text-center">
-                                    <a href="demo/index-2.html?bg=gradient"
-                                       target="_blank" data-bg="gradient">
-                                        <div class="container-mid">
-                                            <h2>GRADIENT</h2> <span class="ti-paint-roller"></span>
-                                        </div><img src="themes/images/bg-gradient.jpg" alt="background"
-                                                   class="img-responsive">
-                                    </a>
-                                </div>
-                                <div class="item text-center">
-                                    <a href="demo/index-2.html?bg=color" target="_blank"
-                                       data-bg="color">
-                                        <div class="container-mid">
-                                            <h2>COLOR</h2> <span class="ti-palette"></span>
-                                        </div><img src="themes/images/bg-color.jpg" alt="background"
-                                                   class="img-responsive">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
-        <div class="background-content page-enter-animated">
-            <div class="level-1">
-                <div class="bg-overlay"></div>
-            </div>
-            <div class="level-2">
-                <div class="bg-image"></div>
-            </div>
+    </div>
+    <div class="background-content page-enter-animated">
+        <div class="level-1">
+            <div class="bg-overlay"></div>
         </div>
-    </section>
+        <div class="level-2">
+            <div class="bg-image"></div>
+        </div>
+    </div>
+</section>
 @* </div> *@

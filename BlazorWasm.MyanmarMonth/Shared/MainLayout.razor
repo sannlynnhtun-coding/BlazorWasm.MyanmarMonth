@@ -1,4 +1,5 @@
 ﻿@inherits LayoutComponentBase
+@inject IJSRuntime JsRuntime
 
 @if (isLoading)
 {
@@ -29,7 +30,12 @@
     {
         if (firstRender)
         {
+            // await Task.Delay(TimeSpan.FromSeconds(5));
+            // await JsRuntime.InvokeVoidAsync("setLoader", true);
+
             // await Task.Delay(TimeSpan.FromSeconds(2));
+            // await JsRuntime.InvokeVoidAsync("setLoader", false);
+
             // isLoading = false;
             // StateHasChanged();
         }
