@@ -1,3 +1,30 @@
 ﻿@inherits LayoutComponentBase
 
-@Body
+@if (isLoading)
+{
+    @* <div id="page-loader">
+        <div class="container-mid">
+            <img src="themes/images/loading-logo.png" class="img-responsive" alt="image">
+            <div class="spinner-container">
+                <div class="css-spinner"></div>
+            </div>
+        </div>
+    </div> *@
+}
+
+    @Body
+
+
+@code {
+    private bool isLoading = true;
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await Task.Delay(TimeSpan.FromSeconds(2));
+            isLoading = false;
+            StateHasChanged();
+        }
+    }
+}
