@@ -19,6 +19,7 @@
 
 	<ItemGroup>
 	  <Folder Include="wwwroot\themes\images\months\" />
+	  <Folder Include="wwwroot\themes\images\flowers\" />
 	</ItemGroup>
 
 </Project>
