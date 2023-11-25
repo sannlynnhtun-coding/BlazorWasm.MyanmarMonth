@@ -82,14 +82,14 @@
                                     string url = $"/{month.Id}";
 
                                     <div class="item text-center">
-                                        <a href="@url" data-bg="kenburns">
-                                            @* <NavLink Href="@url" data-bg="kenburns"> *@
+                                        @* <a href="@url" data-bg="kenburns"> *@
+                                        <NavLink Href="@url" data-bg="kenburns">
                                             <div class="container-mid">
                                                 <h2>@month.MonthMm</h2>
                                                 <span class="ti-align-left"></span>
                                             </div><img src="themes/images/flowers/@(month.Id).jpg" alt="background" class="img-responsive">
-                                            @* </NavLink> *@
-                                        </a>
+                                        </NavLink>
+                                        @* </a> *@
                                     </div>
                                 }
                             }
