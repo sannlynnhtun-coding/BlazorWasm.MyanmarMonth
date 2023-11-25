@@ -75,114 +75,24 @@
                     </div>
                     <div class="grid">
                         <div class="owl-carousel owl-theme">
-                            <div class="item text-center">
-                                <a href="demo/index-2.html?bg=kenburns"
-                                   target="_blank" data-bg="kenburns">
-                                    <div class="container-mid">
-                                        <h2>တန်ခူး</h2> <span class="ti-align-left"></span>
-                                    </div><img src="themes/images/flowers/1.jpg" alt="background"
-                                               class="img-responsive">
-                                </a>
-                            </div>
-                            <div class="item text-center">
-                                <a href="demo/index-2.html?bg=waves" target="_blank"
-                                   data-bg="waves">
-                                    <div class="container-mid">
-                                        <h2>ကဆုန်</h2> <span class="ti-align-left"></span>
-                                    </div><img src="themes/images/flowers/2.jpg" alt="background"
-                                               class="img-responsive">
-                                </a>
-                            </div>
-                            <div class="item text-center">
-                                <a href="demo/index-2.html?bg=youtube"
-                                   target="_blank" data-bg="youtube">
-                                    <div class="container-mid">
-                                        <h2>နယုန်</h2> <span class="ti-align-left"></span>
-                                    </div><img src="themes/images/flowers/3.jpg" alt="background"
-                                               class="img-responsive">
-                                </a>
-                            </div>
-                            <div class="item text-center">
-                                <a href="demo/index-2.html?bg=space" target="_blank"
-                                   data-bg="space">
-                                    <div class="container-mid">
-                                        <h2>ဝါဆို</h2> <span class="ti-align-left"></span>
-                                    </div><img src="themes/images/flowers/4.jpg" alt="background"
-                                               class="img-responsive">
-                                </a>
-                            </div>
-                            <div class="item text-center">
-                                <a href="demo/index-2.html?bg=slider" target="_blank"
-                                   data-bg="slider">
-                                    <div class="container-mid">
-                                        <h2>ဝါခေါင်</h2> <span class="ti-align-left"></span>
-                                    </div><img src="themes/images/flowers/5.jpg" alt="background"
-                                               class="img-responsive">
-                                </a>
-                            </div>
-                            <div class="item text-center">
-                                <a href="demo/index-2.html?bg=glitch" target="_blank"
-                                   data-bg="glitch">
-                                    <div class="container-mid">
-                                        <h2>တော်သလင်း</h2> <span class="ti-align-left"></span>
-                                    </div><img src="themes/images/flowers/6.jpg" alt="background"
-                                               class="img-responsive">
-                                </a>
-                            </div>
-                            <div class="item text-center">
-                                <a href="demo/index-2.html?bg=abstract"
-                                   target="_blank" data-bg="abstract">
-                                    <div class="container-mid">
-                                        <h2>သီတင်းကျွတ်</h2> <span class="ti-align-left"></span>
-                                    </div><img src="themes/images/flowers/7.jpg" alt="background"
-                                               class="img-responsive">
-                                </a>
-                            </div>
-                            <div class="item text-center">
-                                <a href="demo/index-2.html?bg=sphere" target="_blank"
-                                   data-bg="sphere">
-                                    <div class="container-mid">
-                                        <h2>တန်ဆောင်မုန်း</h2> <span class="ti-align-left"></span>
-                                    </div><img src="themes/images/flowers/8.jpg" alt="background"
-                                               class="img-responsive">
-                                </a>
-                            </div>
-                            <div class="item text-center">
-                                <a href="demo/index-2.html?bg=image" target="_blank"
-                                   data-bg="image">
-                                    <div class="container-mid">
-                                        <h2>နတ်တော်</h2> <span class="ti-align-left"></span>
-                                    </div><img src="themes/images/flowers/9.jpg" alt="background"
-                                               class="img-responsive">
-                                </a>
-                            </div>
-                            <div class="item text-center">
-                                <a href="demo/index-2.html?bg=mesh" target="_blank"
-                                   data-bg="mesh">
-                                    <div class="container-mid">
-                                        <h2>ပြာသို</h2> <span class="ti-align-left"></span>
-                                    </div><img src="themes/images/flowers/10.jpg" alt="background"
-                                               class="img-responsive">
-                                </a>
-                            </div>
-                            <div class="item text-center">
-                                <a href="demo/index-2.html?bg=gradient"
-                                   target="_blank" data-bg="gradient">
-                                    <div class="container-mid">
-                                        <h2>တပို့တွဲ</h2> <span class="ti-align-left"></span>
-                                    </div><img src="themes/images/flowers/11.jpg" alt="background"
-                                               class="img-responsive">
-                                </a>
-                            </div>
-                            <div class="item text-center">
-                                <a href="demo/index-2.html?bg=color" target="_blank"
-                                   data-bg="color">
-                                    <div class="container-mid">
-                                        <h2>တပေါင်း</h2> <span class="ti-palette"></span>
-                                    </div><img src="themes/images/flowers/12.jpg" alt="background"
-                                               class="img-responsive">
-                                </a>
-                            </div>
+                            @if (_months is not null)
+                            {
+                                foreach (var month in _months)
+                                {
+                                    string url = $"/{month.Id}";
+
+                                    <div class="item text-center">
+                                        <a href="@url" data-bg="kenburns">
+                                            @* <NavLink Href="@url" data-bg="kenburns"> *@
+                                            <div class="container-mid">
+                                                <h2>@month.MonthMm</h2>
+                                                <span class="ti-align-left"></span>
+                                            </div><img src="themes/images/flowers/@(month.Id).jpg" alt="background" class="img-responsive">
+                                            @* </NavLink> *@
+                                        </a>
+                                    </div>
+                                }
+                            }
                         </div>
                     </div>
                 </div>
