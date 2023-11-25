@@ -30,3 +30,7 @@
 .choose-background-container .grid .item img {
     object-fit: cover;
 }
+
+.block-about-1 p {
+    margin-top: 0.3em;
+}

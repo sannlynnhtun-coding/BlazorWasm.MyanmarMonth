@@ -1,19 +1,19 @@
 {
-  "name": "BlazorWasm.MyanmarMonth",
-  "short_name": "BlazorWasm.MyanmarMonth",
+  "name": "Blazor WASM - Myanmar Months",
+  "short_name": "Blazor WASM - Myanmar Months",
   "start_url": "./",
   "display": "standalone",
   "background_color": "#ffffff",
-  "theme_color": "#03173d",
+  "theme_color": "#282828",
   "prefer_related_applications": false,
   "icons": [
     {
-      "src": "icon-512.png",
+      "src": "logo.png",
       "type": "image/png",
       "sizes": "512x512"
     },
     {
-      "src": "icon-192.png",
+      "src": "logo.png",
       "type": "image/png",
       "sizes": "192x192"
     }

@@ -41,25 +41,21 @@
         <div class="content bg-white block-about-1 padding-top-140 padding-bot-130">
             <div class="container text-left">
                 <div class="header text-center scroll-animated-from-bottom">
-                    <h1>About</h1>
+                    <h1>@_monthDetail.MonthMm (@_monthDetail.MonthEn)</h1><br />
+                    <h1 class="mb-5">@_monthDetail.FestivalMm (@_monthDetail.FestivalEn)</h1>
+                    <MudButton Variant="Variant.Outlined" @onclick="Back">Back</MudButton>
                 </div>
-                <div class="row padding-top-50">
+                <div class="row">
                     <div class="col-sm-6">
-                        <img class="img-responsive scroll-animated-from-bottom" src="assets/images/about/1.jpg" alt="image">
-                        <p class="scroll-animated-from-bottom"> Ut populo accusata qualisque his. Enim debitis forensibus vel ut, wisi iuvaret temporibus eu duo. Sonet ullamcorper mel ad, cu apeirian omittantur persequeris vis, ex veri definiebas ius. Pericula vituperata disputationi eu cum, et quo movet possim definiebas. Diam legendos assueverit at quo, te mea erat dolor qualisque, amet alia consulatu in eum. An modus ipsum suavitate mel, ea per simul iracundia. At sea debet voluptua inimicus, quando possim molestiae qui no. Ut docendi nominati repudiare usu. </p>
-                        <div class="container-video scroll-animated-from-bottom"> <a class="cbp-lightbox" href="https://vimeo.com/109777877"> <span class="ti-control-play"></span> </a> <img class="img-responsive" src="assets/images/about/2.jpg" alt="image"> </div>
+                        <img class="img-responsive scroll-animated-from-bottom" src="themes/images/months/@(_monthDetail.Id).jpg" alt="image">
+                        <p class="scroll-animated-from-bottom"> @_monthDetail.Description </p>
                     </div>
                     <div class="col-sm-6">
-                        <h3 class="scroll-animated-from-bottom"> We create experiences<br>that transform brands<br>and grow businesses.<br></h3>
-                        <p class="scroll-animated-from-bottom"> Lorem ipsum dolor sit amet, pri quodsi deserunt ea, vide omnes eum ad. Ex denique dissentiunt ullamcorper has. His nemore luptatum facilisi ne, at vis docendi aliquando, sea te eius laoreet eleifend. Usu modo quando propriae ea. Quaestio molestiae eos id, prompta luptatum scripserit ad eam, in nec vide imperdiet. Veniam soluta mentitum vel at. </p>
-                        <img class="img-responsive scroll-animated-from-bottom" src="assets/images/about/3.jpg" alt="Edit me">
+                        @* <h3 class="scroll-animated-from-bottom"><br></h3> *@
+                        <p class="scroll-animated-from-bottom"> @_monthDetail.Detail </p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-}
-
-@code {
-   
 }
